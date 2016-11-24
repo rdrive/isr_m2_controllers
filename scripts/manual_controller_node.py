@@ -68,7 +68,7 @@ def manual_controller():
     print_instruction()
     global pub
     pub = rospy.Publisher('cmd_vel', Twist)
-    rospy.Subscriber('keyboard/keydown', Key, key_callback)
+    rospy.Subscriber('keyboard_node/keydown', Key, key_callback)
     rospy.init_node('isr_m2_manual_controller_node')
     rospy.spin()
 
