@@ -61,8 +61,15 @@ def key_callback(data):
         traceback.print_exc()
 
 def print_instruction():
-    print "Forward/back arrows: linear velocity incr/decr"
-    print "-----------------------------------------------"
+    print "======================================================="
+    print "               ISR-M2 Keyboard Controller              "
+    print "-------------------------------------------------------"
+    print "UP   / DOWN  arrows: linear  velocity incr/decr"
+    print "LEFT / RIGHT arrows: angular velocity incr/decr"
+    print "SPACE              : stop (set velocity zero)"
+    print "D                  : disable motor"
+    print "E                  : eable   motor"
+    print "======================================================="
 
 def manual_controller():
     print_instruction()
